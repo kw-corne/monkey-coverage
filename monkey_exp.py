@@ -125,5 +125,5 @@ if __name__ == "__main__":
 
     time.sleep(5)
 
-    c = "/home/c/Android/Sdk/emulator/emulator -avd Pixel_3a_API_30_x86 -wipe-data"
+    c = f"{config["paths"]["emulator"]} -avd {config["emulator"]["devicename"]} -wipe-data"
     subprocess.Popen(c, shell=True)
