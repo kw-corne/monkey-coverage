@@ -4,4 +4,4 @@ Usage:
 
   ``1. Edit config.ini`` 
   
-  ``2. run $ python3 monkey_exp.py``
+  ``2. $ python3 monkey_exp.py``
