@@ -38,8 +38,6 @@ def uninstall_apk(apk):
     print(f"Passed uninstalling {apk['path']}")
 
 def monkey_apk(apk):
-    time.sleep(5)
-
     command = f"adb shell monkey -p {apk['package_name']} 999999999"
     subprocess.run(command, shell=True)
     print(f"Passed monkey for {apk['path']}")
